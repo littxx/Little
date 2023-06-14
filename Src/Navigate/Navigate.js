@@ -9,6 +9,7 @@ import { createStackNavigator } from "@react-navigation/stack";
 import Splash from "../Screens/Splash";
 import Welcome from "../Screens/Welcome";
 import Solicitar from "../Screens/Solicitar";
+import Acordar from "../Screens/Acordar";
 
 const resume = {
     headerShown: false,
@@ -19,8 +20,13 @@ const resume = {
     gestureEnabled: false,
 }
 
-const headerMost = {
+const cardPersonalizar = {
 
+    headerStyle: {
+        backgroundColor: '#F6F6F6',
+
+    },
+    headerTitle:"Personalização"
 }
 
 
@@ -37,6 +43,8 @@ const Navigate = () => {
                 <Stack.Screen name="Splash" component={Splash} options={resume} />
                 <Stack.Screen name="Welcome" component={Welcome} options={resume}/>
                 <Stack.Screen name="Solicitar" component={Solicitar} options={resume}/>
+                <Stack.Screen name="Acordar" component={Acordar} options={cardPersonalizar}/>
+                <Stack.Screen name="Dormir" component={Dormir} options={cardPersonalizar}/>
                
             </Stack.Navigator>
         </NavigationContainer>
