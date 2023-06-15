@@ -7,7 +7,7 @@ import DatePicker from "react-native-date-picker";
 
 
 
-const Acordar = () => {
+const Genero = () => {
 
 
     const navigation = useNavigation();
@@ -15,20 +15,20 @@ const Acordar = () => {
     const [date, setDate] = useState(new Date())
 
     const proximaTela = () => {
-        navigation.navigate("Dormir")
+        navigation.navigate("Peso")
     }
     return (
         <View style={styles.container}>
             <View style={styles.containerBalls}>
 
-                <Bolinhas bolaAtual={0} />
+                <Bolinhas bolaAtual={1} />
             </View>
             <View style={styles.containerText}>
                 <Text style={styles.textBold} >
-                    Selecione a hora que {"\n"}acorda:
+                    Selecione a hora que {"\n"}dorme:
                 </Text>
                 <Text style={styles.textComum}>
-                    Os lembretes começarão depois {"\n"}deste horário:
+                   Não tocarão lembretes a partir deste {"\n"}horário:
                 </Text>
 
             </View>
@@ -125,4 +125,4 @@ const styles = StyleSheet.create({
 
 
 
-export default Acordar;
+export default Genero;

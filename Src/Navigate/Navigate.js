@@ -10,6 +10,11 @@ import Splash from "../Screens/Splash";
 import Welcome from "../Screens/Welcome";
 import Solicitar from "../Screens/Solicitar";
 import Acordar from "../Screens/Acordar";
+import Dormir from "../Screens/Dormir";
+import Peso from "../Screens/Peso";
+import Idade from "../Screens/Idade";
+import Genero from "../Screens/Genero";
+
 
 const resume = {
     headerShown: false,
@@ -45,6 +50,9 @@ const Navigate = () => {
                 <Stack.Screen name="Solicitar" component={Solicitar} options={resume}/>
                 <Stack.Screen name="Acordar" component={Acordar} options={cardPersonalizar}/>
                 <Stack.Screen name="Dormir" component={Dormir} options={cardPersonalizar}/>
+                <Stack.Screen name="Peso" component={Peso} options={cardPersonalizar}/>
+                <Stack.Screen name="Idade" component={Idade} options={cardPersonalizar}/>
+                <Stack.Screen name="Genero" component={Genero} options={cardPersonalizar}/>
                
             </Stack.Navigator>
         </NavigationContainer>
