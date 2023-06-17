@@ -17,5 +17,40 @@ buildscript {
     dependencies {
         classpath("com.android.tools.build:gradle:7.3.1")
         classpath("com.facebook.react:react-native-gradle-plugin")
+        classpath( 'com.google.gms.google-services:4.3.15')
     }
+}
+
+allprojects {
+  ...
+  repositories {
+    // Make sure that you have the following two repositories
+    google()  // Google's Maven repository
+
+    mavenCentral()  // Maven Central repository
+
+  }
+}
+
+plugins {
+  id 'com.android.application'
+
+  // Adicionar o plug-in Gradle de serviços do Google
+  id 'com.google.gms.google-services'
+
+  ...
+}
+
+dependências {
+  // Importar o Firebase BoM
+  plataforma de implementação ( 'com.google.firebase:firebase-bom:32.1.1' )
+
+
+  // TODO: Adicione as dependências dos produtos Firebase que você deseja usar
+  // Ao usar o BoM, não especifique as versões nas dependências do Firebase
+  implementação 'com.google.firebase:firebase-analytics'
+
+
+  // Adicione as dependências para quaisquer outros produtos Firebase desejados
+  // https://firebase.google.com/docs/android/setup#available-libraries
 }

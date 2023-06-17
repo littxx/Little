@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "804825155075",
+    "project_id": "eden-aqua",
+    "storage_bucket": "eden-aqua.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:804825155075:android:9e0cf46b94163fdbf5b036",
+        "android_client_info": {
+          "package_name": "com.eden.agua"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "804825155075-55ckh0huvdjolvsnjacsmc71qa80ejn5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAnUVrBvVUE8eoloLP5Fk3g_vKWdSCJZwI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "804825155075-55ckh0huvdjolvsnjacsmc71qa80ejn5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

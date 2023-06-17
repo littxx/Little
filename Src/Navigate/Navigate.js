@@ -14,7 +14,7 @@ import Dormir from "../Screens/Dormir";
 import Peso from "../Screens/Peso";
 import Idade from "../Screens/Idade";
 import Genero from "../Screens/Genero";
-
+import Resultado from "../Screens/Resultado";
 
 const resume = {
     headerShown: false,
@@ -53,6 +53,7 @@ const Navigate = () => {
                 <Stack.Screen name="Peso" component={Peso} options={cardPersonalizar}/>
                 <Stack.Screen name="Idade" component={Idade} options={cardPersonalizar}/>
                 <Stack.Screen name="Genero" component={Genero} options={cardPersonalizar}/>
+                <Stack.Screen name="Resultado" component={Resultado} options={resume}/>
                
             </Stack.Navigator>
         </NavigationContainer>

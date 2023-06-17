@@ -17,7 +17,7 @@ const Peso = () => {
 
     const peso = []
 
-    for (let i = 1; i <= 200; i++) {
+    for (let i = 1; i <= 100; i++) {
 
         peso.push(i)
     }
@@ -42,7 +42,8 @@ const Peso = () => {
                     Selecione a sua idade
                 </Text>
                 <Text style={styles.textComum}>
-                    Pesos diferentes tem um consumo {"\n"}diário diferente.
+
+                Idades diferentes tem um consumo {"\n"}diário diferente.
                 </Text>
 
             </View>
